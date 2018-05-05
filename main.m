@@ -1,11 +1,14 @@
+%close all windows and clear console
 close all; clear;
+
+%import libraries
 pkg load image;
 pkg load dicom;
 
 SHOWGRAPHICS = false; %Show Processed Images
 HAT_TYPE = "Bottom"; %Top or Bottom
 SE_SIZE = 7;  %Structing Element Size
-SRC_FOLDER = ".\\3030\\scans\\5_A 3D FSPGR BRAVO\\DICOM\\"; %Source Folder
+SRC_FOLDER = ".\\DICOM\\"; %Source Folder
 DST_FOLDER = ".\\news\\"; %Destination Folder
 
 %plot configuration
